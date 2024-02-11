@@ -21,7 +21,7 @@ namespace Workaround
             // Diziler - Arrays
             string[] ogrenciler = new string[3];
             ogrenciler[0] = "Hasan";
-            ogrenciler[1] = "Can";
+            ogrenciler[1] = "Caan";
             ogrenciler[2] = "Yıldırım";
             // ogrenciler[3] = "Engin";
             // ogrenciler[4] = "Demiroğ";
