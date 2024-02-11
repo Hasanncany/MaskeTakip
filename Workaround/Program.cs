@@ -1,4 +1,7 @@
 ﻿using System;
+using Business.Concrete;
+using Entities.Concrete;
+using Business.Abstract;
 
 namespace Workaround
 {
@@ -47,6 +50,15 @@ namespace Workaround
             sayi1 = 30;
             Console.WriteLine(sayi2);
 
+            Person person1 = new Person();
+            person1.FirstName = "Hasancan";
+            person1.LastName = "Yıldırım";
+            person1.DateOfBirthYear = 1985;
+            person1.NationalIdentity = 123;
+            
+            Person person2 = new Person();
+            person2.FirstName = "Engin";
+
 
             // Foreach Döngüsü
             foreach (string sehir in sehirler1)
@@ -62,7 +74,10 @@ namespace Workaround
                 Console.WriteLine(sehir);
             }
 
-
+            PttManager pttManager = new PttManager(new PersonManager());
+            pttManager.GiveMask(person1);
+            
+           
             Console.ReadLine();
         }
 
